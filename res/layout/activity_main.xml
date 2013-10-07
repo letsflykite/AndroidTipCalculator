@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn15Percent"
+        android:onClick="on15Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="118dp"
+        android:text="@string/FifteenPercent_Label" />
+
+    <Button
+        android:id="@+id/btn10Percent"
+        android:onClick="on10Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn15Percent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp"
+        android:text="@string/TenPercent_Label" />
+
+    <Button
+        android:id="@+id/btn20Percent"
+        android:onClick="on20Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn15Percent"
+        android:layout_alignBottom="@+id/btn15Percent"
+        android:layout_toRightOf="@+id/btn15Percent"
+        android:text="@string/TwentyPercent_Label" />
+
+    <TextView
+        android:id="@+id/tvTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn20Percent"
+        android:layout_below="@+id/btn15Percent"
+        android:layout_marginTop="64dp"
+        android:text="@string/nothing_label"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn10Percent"
+        android:layout_alignLeft="@+id/btn10Percent"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="@string/enter_prompt" />
+
+</RelativeLayout>
